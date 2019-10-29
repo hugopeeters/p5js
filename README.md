@@ -3,6 +3,7 @@
 
 *Links to running code on p5js.org*
 - Attractors: https://editor.p5js.org/hugopeeters/present/Tmdtg4mAm
+Flow: https://editor.p5js.org/hugopeeters/present/BTcHO66sH
 - Starfield: https://editor.p5js.org/hugopeeters/present/j-xtH8Dwn
 - Rain: https://editor.p5js.org/hugopeeters/present/-N-MYRmAD
 - Diffusion Limited Aggregation: https://editor.p5js.org/hugopeeters/present/a4X1jGfIF
