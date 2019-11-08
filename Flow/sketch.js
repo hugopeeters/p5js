@@ -1,6 +1,6 @@
 let fieldResolution = 10;
 let fieldScale = 0.01;
-let changeRate = 0.0005;
+let changeRate = 0.00005;
 let numP = 5000;
 let lineOpacity = 0.075;
 let fieldForce = 1;
