@@ -2,7 +2,7 @@ let boids = [];
 let numBoids = 100
 
 function setup() {
-    createCanvas(800, 800);
+    createCanvas(800, 400);
     for(let i = 0; i < numBoids; i++){
         boids.push(new Boid(random(width), random(height)));
     }
