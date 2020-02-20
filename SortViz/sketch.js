@@ -1,9 +1,17 @@
-let myList = [4, 2, 3, 5, 1, 6, 9, 7, 8];
+let srcArr = [];
+let myList = new Array(100);
 let i = 0;
 
 function setup() {
     createCanvas(800, 400);
-    frameRate(1);
+    frameRate(10);
+    for (let i = 0; i < myList.length; i++) {
+        srcArr[i] = i + 1;
+    }
+    for (let i = 0; i < myList.length; i++) {
+        myList[i] = srcArr.splice(random(0, srcArr.length), 1)[0];
+    }
+    console.log(myList);
     visualizeArray(myList, null);
 }
 
