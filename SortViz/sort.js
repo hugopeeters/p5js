@@ -1,8 +1,11 @@
 const s = (sketch) => {
+
+    //BUBBLE SORT
     let srcArr = [];
-    let myList = new Array(100);
+    let myList = new Array(200);
     let i = 0;
-    
+    let index;
+
     sketch.setup = function () {
         for (let i = 0; i < myList.length; i++) {
             srcArr[i] = i + 1;
@@ -15,12 +18,13 @@ const s = (sketch) => {
         sketch.frameRate(10);
         console.log(myList);
         visualizeArray(myList, null);
+        index = myList.length - 1;
     };
 
     sketch.draw = function () {
 
         //loop through the array (skip the last item) bubble high values up
-        for (let i = 0; i < myList.length - 1; i++) {
+        for (let i = 0; i < index; i++) {
             if (myList[i] > myList[i + 1]) {
 
                 //swap
@@ -32,10 +36,11 @@ const s = (sketch) => {
                 repeat = true;
             }
         }
-        visualizeArray(myList, null);
+        visualizeArray(myList, index);
         if (!repeat) {
             sketch.noLoop();
         }
+        index--;
     };
 
     function visualizeArray(arr, highlight) {
@@ -56,8 +61,10 @@ const s = (sketch) => {
 };
 
 const z = (sketch2) => {
+
+    //SELECTION SORT
     let srcArr = [];
-    let myList = new Array(100);
+    let myList = new Array(200);
     let i = 0;
 
     sketch2.setup = function () {
